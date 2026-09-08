@@ -1,20 +1,20 @@
-# Sistema de Gestión de Citas Médicas
+## Sistema de Gestión Documental Proyecto de la asignatura Arquitectura de Sistemas Computacionales.
 
-Proyecto de la asignatura Arquitectura de Sistemas Computacionales.
+Proyecto Arquitectura de Sistemas.
 
 ## Problema
 
-Actualmente, la gestión de citas médicas puede presentar dificultades como demoras en la asignación, pérdida de información y poca organización de los horarios disponibles.
+ El proyecto busca desarrollar un sistema de gestión documental que permita organizar, almacenar, consultar y administrar documentos de manera centralizada y eficiente. El sistema está dirigido a organizaciones que necesitan controlar su documentación, facilitar la búsqueda de archivos y mejorar la gestión, trazabilidad y seguridad de la información.
 
-Este sistema busca facilitar el registro, consulta y administración de citas médicas para pacientes y personal encargado, permitiendo organizar de manera más clara la disponibilidad de las citas.
+ 
 
 ## Integrantes
 
 | Nombre | Usuario de GitHub | Rol en el equipo |
 |---|---|---|
 | Briyith Espinosa | IlBrithll | Integrante |
-| Pendiente | Pendiente | Integrante |
-| Pendiente | Pendiente | Integrante |
+| Karen Caicedo | Kalet17 | Integrante |
+
 
 ## Estado del proyecto
 
