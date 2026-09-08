@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+patrones="(AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|password[[:space:]]*=[[:space:]]*[\"'][^\"']{6,}|SECRET_KEY[[:space:]]*=|aws_secret_access_key)"
+
+git grep --cached -I -i -l -E "$patrones" -- . ':(exclude).githooks/pre-commit'
+resultado=$?
+
+if [ "$resultado" -eq 0 ]; then
+  echo "COMMIT BLOQUEADO: posible credencial en los archivos indicados."
+  echo "Retirala del codigo y guardala en .env."
+  echo "Documenta solo el nombre en .env.example."
+  exit 1
+elif [ "$resultado" -ne 1 ]; then
+  echo "COMMIT BLOQUEADO: no se pudo verificar el contenido."
+  exit 1
+fi
