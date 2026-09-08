@@ -10,27 +10,18 @@
 
 ### Escenario 1 - Rendimiento
 
-- Fuente: Paciente o personal administrativo.
-- Estímulo: El usuario consulta las citas disponibles o solicita agendar una cita.
-- Artefacto: Sistema de gestión de citas médicas.
-- Entorno: 200 usuarios utilizando el sistema de forma concurrente.
-- Respuesta: El sistema procesa la solicitud y muestra la información solicitada.
-- Medida: El 95% de las solicitudes debe responder en menos de 400 ms.
+- Fuente: Usuario o personal administrativo.
+- Estímulo: El usuario realiza una búsqueda, consulta o descarga de un documento almacenado en el sistema.
+- Artefacto: Sistema de Gestión Documental.
+- Entorno: Hasta 200 usuarios utilizando el sistema de manera concurrente.
+- Respuesta: El sistema procesa la solicitud y muestra los documentos o la información solicitada.
+- Medida: El 95% de las consultas debe responder en menos de 400 ms.
 
 ### Escenario 2 - Disponibilidad
 
-- Fuente: Paciente o personal administrativo.
-- Estímulo: El usuario intenta ingresar al sistema para consultar o administrar citas.
-- Artefacto: Sistema de gestión de citas médicas.
-- Entorno: Operación normal.
-- Respuesta: El sistema debe permanecer disponible para atender las solicitudes.
+- Fuente: Usuario o personal administrativo.
+- Estímulo: El usuario intenta ingresar al sistema para consultar, cargar, descargar o administrar documentos.
+- Artefacto: Sistema de Gestión Documental.
+- Entorno: Operación normal del sistema.
+- Respuesta: El sistema debe permanecer disponible para permitir el acceso y gestión de los documentos.
 - Medida: Disponibilidad mensual igual o superior al 99.5%.
-
-### Escenario 3 - Seguridad
-
-- Fuente: Usuario del sistema.
-- Estímulo: Se realizan varios intentos consecutivos de inicio de sesión con una contraseña incorrecta.
-- Artefacto: Módulo de autenticación.
-- Entorno: Operación normal.
-- Respuesta: El sistema limita los intentos de acceso para proteger la cuenta.
-- Medida: Máximo 5 intentos fallidos consecutivos antes de aplicar una medida de protección.
