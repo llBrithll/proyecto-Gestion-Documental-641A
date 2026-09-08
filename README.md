@@ -37,12 +37,11 @@ Proyecto Arquitectura de Sistemas.
 | `tests/carga/` | Pruebas de rendimiento |
 | `evidencias/` | Capturas e informes de los laboratorios |
 
-## Como ejecutar
+## Hook de detección de credenciales
 
-Pendiente. Se documenta en el Hito 2.
+Después de clonar el repositorio, cada integrante debe ejecutar
 
-## Notas para el equipo
+git config core.hooksPath .githooks
 
-- Trabajar siempre desde `C:\dev\` o equivalente, nunca desde carpetas sincronizadas con OneDrive.
-- Usar Git Bash, no PowerShell.
-- Ejecutar una vez por clon: `git config core.hooksPath .githooks`
+Esta configuración es local. El hook bloquea los commits cuando
+detecta posibles credenciales en los archivos preparados.
